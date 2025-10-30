@@ -1,7 +1,7 @@
 export default function Footer() {
 	return (
 		<footer className="border-t mt-12">
-			<div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 grid md:grid-cols-3 gap-6">
+			<div className="max-w-screen-2xl mx-auto px-4 py-8 text-sm text-gray-600 grid md:grid-cols-3 gap-6">
 				<div>
 					<p className="font-semibold text-gray-800">L'Arbo'Vert</p>
 					<p>Depuis 2010 — Entretien, Création, Élagage.</p>

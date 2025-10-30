@@ -5,7 +5,7 @@ export default function Header() {
 	const [open, setOpen] = useState(false);
 	return (
 		<header className="border-b bg-white/80 backdrop-blur sticky top-0 z-50">
-			<div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+			<div className="max-w-screen-2xl mx-auto px-4 py-3 flex items-center justify-between">
 				<Link to="/" className="flex items-center gap-2">
 					<img src="/images/logo/logo.png" alt="L'Arbo'Vert" className="h-8 w-auto" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
 					<span className="font-semibold text-primary-700">L'Arbo'Vert</span>
@@ -31,7 +31,7 @@ export default function Header() {
 			{/* Mobile menu panel */}
 			{open && (
 				<div className="md:hidden border-t bg-white">
-					<nav className="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+					<nav className="max-w-screen-2xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
 						<NavLink onClick={() => setOpen(false)} to="/" end className={({ isActive }) => isActive ? "text-primary-700" : "text-gray-700 hover:text-primary-700"}>Accueil</NavLink>
 						<NavLink onClick={() => setOpen(false)} to="/prestations" className={({ isActive }) => isActive ? "text-primary-700" : "text-gray-700 hover:text-primary-700"}>Prestations</NavLink>
 						<NavLink onClick={() => setOpen(false)} to="/galerie" className={({ isActive }) => isActive ? "text-primary-700" : "text-gray-700 hover:text-primary-700"}>Galerie</NavLink>

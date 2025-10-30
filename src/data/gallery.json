@@ -1,20 +1,32 @@
 [
   {
-    "src": "/images/galerie/386351_217601.jpeg",
-    "category": "creation",
+    "id": 1,
+    "src": "/images/galerie/220111_995830.webp",
     "alt": "Réalisation 1",
-    "id": 1
+    "category": "creation"
   },
   {
-    "src": "/images/galerie/779282_404590.png",
-    "category": "elagage",
+    "id": 2,
+    "src": "/images/galerie/386351_217601.webp",
     "alt": "Réalisation 2",
-    "id": 2
+    "category": "creation"
   },
   {
-    "src": "/images/galerie/cqwvqtmbhld5kgmbtm72.png",
-    "category": "entretien",
+    "id": 3,
+    "src": "/images/galerie/photo-1555021314-2e9c919cb71e.webp",
     "alt": "Réalisation 3",
-    "id": 3
+    "category": "creation"
+  },
+  {
+    "id": 4,
+    "src": "/images/galerie/photo-1578871618350-963df0bb1e88.webp",
+    "alt": "Réalisation 4",
+    "category": "creation"
+  },
+  {
+    "id": 5,
+    "src": "/images/galerie/photo-1640664673122-e2b230cfa5de.webp",
+    "alt": "Réalisation 5",
+    "category": "creation"
   }
 ]

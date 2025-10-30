@@ -4,7 +4,7 @@ import gallery from "../data/gallery.json";
 
 export default function Home() {
 	return (
-		<main className="max-w-6xl mx-auto px-4 py-10">
+		<>
 			<Seo
 				title="L'Arbo'Vert — Entretien, Création, Élagage | Yvelines"
 				description="Depuis 2010, entretien et création d'espaces verts, taille & soin aux arbres, élagage, interventions Yvelines. Devis gratuit."
@@ -19,12 +19,13 @@ export default function Home() {
 					address: { "@type": "PostalAddress", addressLocality: "Yvelines", addressCountry: "FR" },
 				}}
 			/>
-			<section className="relative text-center py-20 rounded-xl overflow-hidden border">
+			{/* Héro en pleine largeur */}
+			<section className="relative text-center py-20 overflow-hidden">
 				<div className="absolute inset-0 bg-center bg-cover" style={{ backgroundImage: 'url(/images/galerie/photo-1640664673122-e2b230cfa5de.webp)' }} />
-				<div className="absolute inset-0 bg-black/40" />
+				<div className="absolute inset-0 bg-black/60" />
 				<div className="relative px-4">
-				<h1 className="text-3xl md:text-5xl font-semibold text-gray-900">L'Arbo'Vert — Entretien, Création, Taille & Soin</h1>
-				<p className="mt-2 text-sm uppercase tracking-wide text-white/80">Depuis 2010</p>
+				<h1 className="text-3xl md:text-5xl font-semibold text-white">L'Arbo'Vert — Entretien, Création, Taille & Soin</h1>
+				<p className="mt-2 text-sm uppercase tracking-wide text-white/90">Depuis 2010</p>
 				<p className="mt-1 text-white">Entretien / Création / Taille & Soin aux Arbres / Petits bricolages</p>
 				<div className="mt-6 flex items-center justify-center gap-3">
 					<a href="/contact" className="brand-button-primary">Demander un devis</a>
@@ -33,6 +34,8 @@ export default function Home() {
 				</div>
 			</section>
 
+			{/* Contenu principal en largeur contenue */}
+			<main className="max-w-6xl mx-auto px-4 py-10">
 			{/* Services en avant */}
 			<section className="mt-10">
 				<h2 className="text-xl font-semibold">Nos prestations</h2>
@@ -92,6 +95,7 @@ export default function Home() {
 				</div>
 			</section>
 		</main>
+		</>
 	);
 }
 
