@@ -1,6 +1,2 @@
-[
-	{ "id": 1, "src": "/images/galerie/gallery-1.png", "alt": "Réalisation 1", "category": "creation" },
-	{ "id": 2, "src": "/images/galerie/gallery-2.png", "alt": "Réalisation 2", "category": "elagage" },
-	{ "id": 3, "src": "/images/galerie/gallery-3.png", "alt": "Réalisation 3", "category": "entretien" }
-]
+[]
 
