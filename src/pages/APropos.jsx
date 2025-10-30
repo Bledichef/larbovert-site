@@ -12,11 +12,15 @@ export default function APropos() {
 					<h2 className="text-xl font-semibold">Notre histoire</h2>
 					<p className="mt-3 text-gray-700">Une passion qui fait pousser vos rêves. Depuis sa création, l'Arbo'Vert s’est forgée une réputation solide dans le paysagisme. Nous avons débuté avec l’ambition de proposer des solutions uniques, adaptées à chaque client. Grâce à notre engagement et à la confiance de nos clients, nous sommes devenus une référence locale pour la conception et la réalisation d’espaces extérieurs sur mesure.</p>
 				</div>
-				<div className="rounded-md border aspect-[3/2] bg-primary-50/40 flex items-center justify-center text-primary-700">Section image</div>
+				<div className="rounded-md border overflow-hidden">
+					<img src="/images/galerie/photo-1555021314-2e9c919cb71e.webp" alt="Création d’un aménagement paysager" className="w-full h-full object-cover aspect-[3/2]" />
+				</div>
 			</section>
 
 			<section className="mt-10 grid md:grid-cols-2 gap-8 items-start">
-				<div className="rounded-md border aspect-[3/2] bg-primary-50/40 flex items-center justify-center text-primary-700">Section image</div>
+				<div className="rounded-md border overflow-hidden">
+					<img src="/images/galerie/photo-1578871618350-963df0bb1e88.webp" alt="Entretien d’espaces verts" className="w-full h-full object-cover aspect-[3/2]" />
+				</div>
 				<div>
 					<h2 className="text-xl font-semibold">Notre expertise</h2>
 					<p className="mt-3 text-gray-700">L’art de sublimer vos espaces extérieurs. Notre équipe met à votre service un savoir‑faire complet: création de jardins, pose de terrasses, entretien d’espaces verts et aménagements durables. Nous nous distinguons par notre approche personnalisée: chaque projet reflète vos goûts, vos besoins et l’identité de votre lieu. Chez l'Arbo'Vert, chaque détail compte.</p>
