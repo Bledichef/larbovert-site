@@ -1,15 +1,6 @@
 [
-	{ "id": 1, "src": "https://picsum.photos/seed/crea-1/600/400", "alt": "Création 1", "category": "creation" },
-	{ "id": 2, "src": "https://picsum.photos/seed/crea-2/600/400", "alt": "Création 2", "category": "creation" },
-	{ "id": 3, "src": "https://picsum.photos/seed/elag-1/600/400", "alt": "Élagage 1", "category": "elagage" },
-	{ "id": 4, "src": "https://picsum.photos/seed/elag-2/600/400", "alt": "Élagage 2", "category": "elagage" },
-	{ "id": 5, "src": "https://picsum.photos/seed/entr-1/600/400", "alt": "Entretien 1", "category": "entretien" },
-	{ "id": 6, "src": "https://picsum.photos/seed/entr-2/600/400", "alt": "Entretien 2", "category": "entretien" },
-	{ "id": 7, "src": "https://picsum.photos/seed/aa-1/600/400", "alt": "Avant/Après 1", "category": "avantapres" },
-	{ "id": 8, "src": "https://picsum.photos/seed/aa-2/600/400", "alt": "Avant/Après 2", "category": "avantapres" },
-	{ "id": 9, "src": "https://picsum.photos/seed/mix-1/600/400", "alt": "Création 3", "category": "creation" },
-	{ "id": 10, "src": "https://picsum.photos/seed/mix-2/600/400", "alt": "Élagage 3", "category": "elagage" },
-	{ "id": 11, "src": "https://picsum.photos/seed/mix-3/600/400", "alt": "Entretien 3", "category": "entretien" },
-	{ "id": 12, "src": "https://picsum.photos/seed/mix-4/600/400", "alt": "Avant/Après 3", "category": "avantapres" }
+	{ "id": 1, "src": "/images/galerie/gallery-1.png", "alt": "Réalisation 1", "category": "creation" },
+	{ "id": 2, "src": "/images/galerie/gallery-2.png", "alt": "Réalisation 2", "category": "elagage" },
+	{ "id": 3, "src": "/images/galerie/gallery-3.png", "alt": "Réalisation 3", "category": "entretien" }
 ]
 
