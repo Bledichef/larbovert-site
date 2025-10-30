@@ -7,14 +7,17 @@ export default function Footer() {
 					<p>Depuis 2010 — Entretien, Création, Élagage.</p>
 				</div>
 				<div>
-					<p className="font-semibold text-gray-800">Navigation</p>
+					<p className="font-semibold text-gray-800">Contact</p>
 					<ul className="space-y-1">
-						<li><a href="/mentions" className="hover:text-primary-700">Mentions légales</a></li>
-						<li><a href="/confidentialite" className="hover:text-primary-700">Politique de confidentialité</a></li>
-						<li><a href="/cookies" className="hover:text-primary-700">Cookies</a></li>
+						<li><a href="tel:+33651651937" className="hover:text-primary-700">06 51 65 19 37</a></li>
+						<li><a href="mailto:stephane@larbovert.fr" className="hover:text-primary-700">stephane@larbovert.fr</a></li>
+						<li className="pt-2 text-xs text-gray-500">Mentions légales: <a href="/mentions" className="underline hover:text-primary-700">voir</a></li>
 					</ul>
 				</div>
-				<div className="text-gray-500">© {new Date().getFullYear()} L'Arbo'Vert</div>
+				<div className="text-gray-500">
+					<p>© {new Date().getFullYear()} L'Arbo'Vert</p>
+					<p className="mt-2 text-xs">Site créé par <a href="https://www.guillaume-colin.com/" target="_blank" rel="noreferrer" className="underline hover:text-primary-700">Guillaume Colin</a></p>
+				</div>
 			</div>
 		</footer>
 	);
