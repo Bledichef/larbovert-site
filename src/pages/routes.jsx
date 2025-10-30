@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import RootLayout from "./RootLayout.jsx";
 import Home from "./Home.jsx";
 import Prestations from "./Prestations.jsx";
 import Galerie from "./Galerie.jsx";
@@ -11,16 +12,22 @@ import Confidentialite from "./Confidentialite.jsx";
 import Cookies from "./Cookies.jsx";
 
 export const router = createBrowserRouter([
-	{ path: "/", element: <Home /> },
-	{ path: "/prestations", element: <Prestations /> },
-	{ path: "/galerie", element: <Galerie /> },
-	{ path: "/blog", element: <Blog /> },
-	{ path: "/blog/:slug", element: <BlogPost /> },
-	{ path: "/a-propos", element: <APropos /> },
-	{ path: "/contact", element: <Contact /> },
-	{ path: "/mentions", element: <Mentions /> },
-	{ path: "/confidentialite", element: <Confidentialite /> },
-	{ path: "/cookies", element: <Cookies /> },
+	{
+		path: "/",
+		element: <RootLayout />,
+		children: [
+			{ index: true, element: <Home /> },
+			{ path: "prestations", element: <Prestations /> },
+			{ path: "galerie", element: <Galerie /> },
+			{ path: "blog", element: <Blog /> },
+			{ path: "blog/:slug", element: <BlogPost /> },
+			{ path: "a-propos", element: <APropos /> },
+			{ path: "contact", element: <Contact /> },
+			{ path: "mentions", element: <Mentions /> },
+			{ path: "confidentialite", element: <Confidentialite /> },
+			{ path: "cookies", element: <Cookies /> },
+		],
+	},
 ]);
 
 
