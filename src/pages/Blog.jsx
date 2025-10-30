@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import Seo from "../seo/Seo.jsx";
 import posts from "../data/posts.json";
 
 export default function Blog() {
 	return (
 		<main className="max-w-6xl mx-auto px-4 py-10">
+			<Seo title="Blog — L'Arbo'Vert" description="Conseils et guides d'entretien: élagage, gazon, entretien saisonnier, création." />
 			<h1 className="text-2xl font-semibold">Blog</h1>
 			<p className="mt-4 text-gray-600">Conseils pour entretenir et valoriser vos espaces verts.</p>
 			<ul className="mt-6 grid md:grid-cols-3 gap-4">

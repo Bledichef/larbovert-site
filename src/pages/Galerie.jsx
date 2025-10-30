@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import Seo from "../seo/Seo.jsx";
 import GalleryGrid from "../components/GalleryGrid.jsx";
 import data from "../data/gallery.json";
 
@@ -19,6 +20,7 @@ export default function Galerie() {
 
 	return (
 		<main className="max-w-6xl mx-auto px-4 py-10">
+			<Seo title="Galerie — L'Arbo'Vert" description="Photos de réalisations: création, élagage, entretien, avant/après." />
 			<h1 className="text-2xl font-semibold">Galerie</h1>
 			<p className="mt-4 text-gray-600">Aperçu des réalisations (mock). Import des photos réelles à venir.</p>
 			<div className="mt-6 flex flex-wrap gap-2">

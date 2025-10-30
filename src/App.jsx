@@ -1,6 +1,7 @@
 import { RouterProvider } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import CookieBanner from "./components/CookieBanner.jsx";
 import { router } from "./pages/routes.jsx";
 import "./App.css";
 
@@ -12,6 +13,7 @@ function App() {
         <RouterProvider router={router} />
       </div>
       <Footer />
+      <CookieBanner />
     </div>
   );
 }

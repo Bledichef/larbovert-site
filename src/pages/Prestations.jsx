@@ -1,6 +1,9 @@
+import Seo from "../seo/Seo.jsx";
+
 export default function Prestations() {
 	return (
 		<main className="max-w-6xl mx-auto px-4 py-10">
+			<Seo title="Prestations — L'Arbo'Vert" description="Création (gazon, plantation, clôture, terrasse), élagage/abattage, rognage/arrachage, entretien d'espaces verts." />
 			<h1 className="text-2xl font-semibold">Prestations</h1>
 			<p className="mt-2 text-gray-600">Nos services pour vos espaces verts, de la création à l’entretien.</p>
 
