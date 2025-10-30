@@ -56,8 +56,8 @@ export default function ContactForm() {
 				{touched.message && errors.message && <p className="text-sm text-red-600 mt-1">{errors.message}</p>}
 			</div>
 			<div className="flex gap-3">
-				<button type="button" disabled={!isValid} className="inline-flex items-center rounded-md bg-green-700 px-4 py-2 text-white disabled:opacity-50">Envoyer via WhatsApp</button>
-				<button type="button" disabled={!isValid} className="inline-flex items-center rounded-md border border-green-700 px-4 py-2 text-green-700 disabled:opacity-50">Envoyer par e‑mail</button>
+				<button type="button" disabled={!isValid} className="brand-button-primary disabled:opacity-50">Envoyer via WhatsApp</button>
+				<button type="button" disabled={!isValid} className="brand-button-outline disabled:opacity-50">Envoyer par e‑mail</button>
 			</div>
 		</form>
 	);

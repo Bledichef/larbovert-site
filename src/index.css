@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme {
+	--color-primary-50: #eef8f1;
+	--color-primary-100: #d7efde;
+	--color-primary-200: #b0dfc0;
+	--color-primary-300: #84cda0;
+	--color-primary-400: #56b87f;
+	--color-primary-500: #2f9f61;
+	--color-primary-600: #25814f;
+	--color-primary-700: #1f5f3b;
+	--color-primary-800: #184a2e;
+	--color-primary-900: #133c26;
+
+	--color-accent-500: #b4873b;
+}
+
+.brand-button-primary {
+	@apply inline-flex items-center rounded-md bg-primary-700 px-4 py-2 text-white hover:bg-primary-800;
+}
+
+.brand-button-outline {
+	@apply inline-flex items-center rounded-md border border-primary-700 px-4 py-2 text-primary-700 hover:bg-primary-50;
+}
