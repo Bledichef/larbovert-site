@@ -3,6 +3,7 @@ import Home from "./Home.jsx";
 import Prestations from "./Prestations.jsx";
 import Galerie from "./Galerie.jsx";
 import Blog from "./Blog.jsx";
+import BlogPost from "./BlogPost.jsx";
 import APropos from "./APropos.jsx";
 import Contact from "./Contact.jsx";
 import Mentions from "./Mentions.jsx";
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
 	{ path: "/prestations", element: <Prestations /> },
 	{ path: "/galerie", element: <Galerie /> },
 	{ path: "/blog", element: <Blog /> },
+	{ path: "/blog/:slug", element: <BlogPost /> },
 	{ path: "/a-propos", element: <APropos /> },
 	{ path: "/contact", element: <Contact /> },
 	{ path: "/mentions", element: <Mentions /> },
