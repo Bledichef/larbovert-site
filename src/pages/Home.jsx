@@ -19,13 +19,17 @@ export default function Home() {
 					address: { "@type": "PostalAddress", addressLocality: "Yvelines", addressCountry: "FR" },
 				}}
 			/>
-			<section className="text-center py-16">
+			<section className="relative text-center py-20 rounded-xl overflow-hidden border">
+				<div className="absolute inset-0 bg-center bg-cover" style={{ backgroundImage: 'url(/images/galerie/photo-1640664673122-e2b230cfa5de.webp)' }} />
+				<div className="absolute inset-0 bg-black/40" />
+				<div className="relative px-4">
 				<h1 className="text-3xl md:text-5xl font-semibold text-gray-900">L'Arbo'Vert — Entretien, Création, Taille & Soin</h1>
-				<p className="mt-2 text-sm uppercase tracking-wide text-gray-500">Depuis 2010</p>
-				<p className="mt-1 text-gray-600">Entretien / Création / Taille & Soin aux Arbres / Petits bricolages</p>
+				<p className="mt-2 text-sm uppercase tracking-wide text-white/80">Depuis 2010</p>
+				<p className="mt-1 text-white">Entretien / Création / Taille & Soin aux Arbres / Petits bricolages</p>
 				<div className="mt-6 flex items-center justify-center gap-3">
 					<a href="/contact" className="brand-button-primary">Demander un devis</a>
-					<a href="/galerie" className="brand-button-outline">Voir la galerie</a>
+					<a href="/galerie" className="brand-button-outline bg-white/90">Voir la galerie</a>
+				</div>
 				</div>
 			</section>
 

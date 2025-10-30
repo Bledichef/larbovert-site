@@ -9,6 +9,7 @@ export default function Header() {
 					<span className="font-semibold text-primary-700">L'Arbo'Vert</span>
 				</Link>
 				<nav className="flex items-center gap-4 text-sm">
+					<NavLink to="/" end className={({ isActive }) => isActive ? "text-primary-700" : "text-gray-700 hover:text-primary-700"}>Accueil</NavLink>
 					<NavLink to="/prestations" className={({ isActive }) => isActive ? "text-primary-700" : "text-gray-700 hover:text-primary-700"}>Prestations</NavLink>
 					<NavLink to="/galerie" className={({ isActive }) => isActive ? "text-primary-700" : "text-gray-700 hover:text-primary-700"}>Galerie</NavLink>
 					<NavLink to="/blog" className={({ isActive }) => isActive ? "text-primary-700" : "text-gray-700 hover:text-primary-700"}>Blog</NavLink>
