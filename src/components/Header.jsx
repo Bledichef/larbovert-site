@@ -9,6 +9,7 @@ export default function Header() {
 				<Link to="/" className="flex items-center gap-2">
 					<img src="/images/logo/logo.png" alt="L'Arbo'Vert" className="h-8 w-auto" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
 					<span className="font-semibold text-primary-700">L'Arbo'Vert</span>
+					
 				</Link>
 
 				{/* Desktop nav */}
