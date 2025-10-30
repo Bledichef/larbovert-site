@@ -1,14 +1,20 @@
 [
   {
-    "src": "/images/galerie/779282_404590.png",
+    "src": "/images/galerie/386351_217601.jpeg",
     "category": "creation",
     "alt": "Réalisation 1",
     "id": 1
   },
   {
-    "src": "/images/galerie/cqwvqtmbhld5kgmbtm72.png",
-    "category": "creation",
+    "src": "/images/galerie/779282_404590.png",
+    "category": "elagage",
     "alt": "Réalisation 2",
     "id": 2
+  },
+  {
+    "src": "/images/galerie/cqwvqtmbhld5kgmbtm72.png",
+    "category": "entretien",
+    "alt": "Réalisation 3",
+    "id": 3
   }
 ]
