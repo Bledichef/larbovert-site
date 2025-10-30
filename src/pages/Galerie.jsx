@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import Seo from "../seo/Seo.jsx";
 import GalleryGrid from "../components/GalleryGrid.jsx";
 import data from "../data/gallery.json";
+import Lightbox from "../components/Lightbox.jsx";
 
 const categories = [
 	{ key: "all", label: "Tout" },
@@ -13,6 +14,7 @@ const categories = [
 
 export default function Galerie() {
 	const [active, setActive] = useState("all");
+	const [lbIndex, setLbIndex] = useState(-1);
 	const images = useMemo(() => {
 		if (active === "all") return data;
 		return data.filter((i) => i.category === active);
@@ -31,8 +33,15 @@ export default function Galerie() {
 				))}
 			</div>
 			<div className="mt-6">
-				<GalleryGrid images={images} />
+				<GalleryGrid images={images} onClick={(i) => setLbIndex(i)} />
 			</div>
+			<Lightbox
+				images={images}
+				index={lbIndex}
+				onClose={() => setLbIndex(-1)}
+				onPrev={() => setLbIndex((i) => (i <= 0 ? images.length - 1 : i - 1))}
+				onNext={() => setLbIndex((i) => (i >= images.length - 1 ? 0 : i + 1))}
+			/>
 		</main>
 	);
 }
